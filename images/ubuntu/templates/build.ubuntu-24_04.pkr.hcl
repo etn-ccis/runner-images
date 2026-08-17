@@ -113,6 +113,7 @@ provisioner "shell" {
       "${path.root}/../scripts/build/install-awf.sh",
       "${path.root}/../scripts/build/install-container-tools.sh",
       "${path.root}/../scripts/build/install-dotnetcore-sdk.sh",
+      "${path.root}/../scripts/build/install-e2fsprogs.sh",
       "${path.root}/../scripts/build/install-microsoft-edge.sh",
       "${path.root}/../scripts/build/install-gcc-compilers.sh",
       "${path.root}/../scripts/build/install-firefox.sh",

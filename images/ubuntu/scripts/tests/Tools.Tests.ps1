@@ -146,6 +146,12 @@ Describe "Cmake" {
     }
 }
 
+Describe "e2fsprogs" {
+    It "e2fsck" {
+        "e2fsck -V" | Should -ReturnZeroExitCode
+    }
+}
+
 Describe "gcc" {
     $testCases = (Get-ToolsetContent).gcc.Versions | ForEach-Object { @{GccVersion = $_} }
 
